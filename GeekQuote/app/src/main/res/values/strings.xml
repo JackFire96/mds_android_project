@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GeekQuote</string>
+
+    <string-array name="initial_quotes">
+
+        <item>I m your father</item>
+        <item>You should not pass</item>
+        <item>Coucou, tu veux voir mon layout</item>
+
+    </string-array>
+</resources>
