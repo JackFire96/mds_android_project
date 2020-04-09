@@ -12,7 +12,7 @@ public class Quote {
 
     }
 
-    public Quote(String strQuote) {
+    public Quote(String strQuote, int rating, Date creatingDate) {
         this.strQuote = strQuote;
         this.rating = 0;
         this.creatingDate = new Date();

@@ -7,6 +7,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -21,9 +23,9 @@ public class DemoGeekQuote extends AppCompatActivity {
 
     ArrayList<Quote> quotes = new ArrayList<>();
 
-    EditText et_main_quote;
+    private EditText et_main_quote;
     Button bt_main_add_list;
-    ListView tv_main_quote;
+    ListView lv_main_quote;
 
 
     @Override
@@ -33,7 +35,7 @@ public class DemoGeekQuote extends AppCompatActivity {
         Log.d("GeekQuote", "New List");
 
         et_main_quote = findViewById(R.id.et_main_quote);
-        tv_main_quote = findViewById(R.id.tv_main_quote);
+        lv_main_quote = findViewById(R.id.lv_main_quote);
         bt_main_add_list = findViewById(R.id.bt_main_add_list);
 
         String[] newArrayGeekQuote = getResources().getStringArray(R.array.initial_quotes);
@@ -42,8 +44,9 @@ public class DemoGeekQuote extends AppCompatActivity {
             addQuote(item);
         }
 
-        final ArrayAdapter<Quote> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, quotes);
-        tv_main_quote.setAdapter(adapter);
+        quoteArrayadapter =
+
+        lv_main_quote.setAdapter(adapter);
 
         bt_main_add_list.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,5 +68,7 @@ public class DemoGeekQuote extends AppCompatActivity {
 
         this.quotes.add(newQuote);
         Log.d("GeekQuote","Item added " + newQuote.getStrQuote());
+        Toast.makeText(this, strQuote, Toast.LENGTH_SHORT).show();
     }
+
 }

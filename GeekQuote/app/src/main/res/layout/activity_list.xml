@@ -33,7 +33,7 @@
     </LinearLayout>
 
     <ListView
-        android:id="@+id/tv_main_quote"
+        android:id="@+id/lv_main_quote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

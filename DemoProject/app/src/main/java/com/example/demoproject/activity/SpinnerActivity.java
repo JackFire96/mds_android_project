@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.example.demoproject.R;
 import com.example.demoproject.model.ProgrammingLanguage;
 
-public class MainActivity extends AppCompatActivity
+public class SpinnerActivity extends AppCompatActivity
     implements View.OnClickListener {
 
         private Button bt_main1, bt_main2, bt_main3;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity
         @Override
         protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_spinner);
 
         bt_main1 = findViewById(R.id.bt_main1);
         bt_main2 = findViewById(R.id.bt_main2);
