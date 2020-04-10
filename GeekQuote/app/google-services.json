@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "492153403764",
+    "firebase_url": "https://geekquote-90c89.firebaseio.com",
+    "project_id": "geekquote-90c89",
+    "storage_bucket": "geekquote-90c89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492153403764:android:0f3baae4e9aca08d885421",
+        "android_client_info": {
+          "package_name": "fr.mds.geekquote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492153403764-d84k51vusb8hj2h6qmfk3n0hd0hfaqhh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvx1s6auHlOxhF4AIvSENTNEgdt32VTsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492153403764-d84k51vusb8hj2h6qmfk3n0hd0hfaqhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
