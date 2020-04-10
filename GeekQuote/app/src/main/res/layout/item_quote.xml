@@ -4,19 +4,49 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_item_quote_strQuote"
+    <LinearLayout
+        android:id="@+id/ll_content_quote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLines="1"
-        android:text="TextView"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:orientation="vertical"
+        android:paddingBottom="12dp">
 
-    <TextView
-        android:id="@+id/tv_item_quote_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textStyle="italic"/>
+        <TextView
+            android:id="@+id/tv_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Quote"
+            android:textColor="@android:color/black"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tv_creation_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CreationDate"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"/>
+            <ImageView
+                android:id="@+id/rating_star_svg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_star_black_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
 </LinearLayout>
